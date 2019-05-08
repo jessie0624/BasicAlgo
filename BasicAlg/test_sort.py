@@ -4,6 +4,7 @@ from BubbleSort import *
 from MergeSort import *
 from SelectSort import *
 from InsertSort import *
+from HeapSort import *
 
 class TestQuickSort(unittest.TestCase):
     def test_quicksort(self):
@@ -46,6 +47,14 @@ class TestQuickSort(unittest.TestCase):
         InsertSort(data6)
         sorted(ret)
         self.assertEqual(ret, data6)
+    
+    def test_heapsort(self):
+        data7 = [10, 9, -1, 0, 4, 7, 8]
+        ret = data7
+        HeapSort(data7)
+        sorted(ret)
+        self.assertEqual(ret, data7)
+
 
 if __name__ == "__main__":
     unittest.main()

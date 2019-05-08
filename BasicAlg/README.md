@@ -28,7 +28,7 @@
 
 #### InsertSort:
     regards the previous M value are sorted. Then sort the next one(M+1).Compare the data (M+1) with O-M and insert to the right place.
-    Time complexity: O(N ^ 2)
+    Time complexity: O(N ^ 2)  常数项特别低
     Space complexity: O(1)
     Stable: Yes
 
