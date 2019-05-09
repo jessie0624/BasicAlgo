@@ -5,6 +5,7 @@ from MergeSort import *
 from SelectSort import *
 from InsertSort import *
 from HeapSort import *
+from ShellsSort import *
 
 class TestQuickSort(unittest.TestCase):
     def test_quicksort(self):
@@ -54,6 +55,13 @@ class TestQuickSort(unittest.TestCase):
         HeapSort(data7)
         sorted(ret)
         self.assertEqual(ret, data7)
+    
+    def test_shellssort(self):
+        data8 = [10, 9, -1, 0, 4, 7, 8]
+        ret = data8
+        ShellsSort(data8)
+        sorted(ret)
+        self.assertEqual(ret, data8)       
 
 
 if __name__ == "__main__":

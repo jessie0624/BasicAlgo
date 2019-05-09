@@ -25,6 +25,9 @@
     Stable: Yes
 
 #### HeapSort:
+    Time complexity：O(N*logN)
+    Space complexity: O(1)
+    Stable: No
 
 #### InsertSort:
     regards the previous M value are sorted. Then sort the next one(M+1).Compare the data (M+1) with O-M and insert to the right place.
