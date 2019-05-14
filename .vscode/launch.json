@@ -16,7 +16,11 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "pythonPath": "${config:python.pythonPath}",
+            "cwd": "${workspaceRoot}",
+            "env": {"PYTHONPATH":"${workspaceRoot}"},
+            "envFile": "${workspaceRoot}/.env",
         },
         {
             "name": "Python: Remote Attach",
