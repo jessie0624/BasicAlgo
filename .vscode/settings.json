@@ -2,7 +2,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./MeachinLearning",
+        "./BasicAlg",
         "-p",
         "test_*.py"
     ],
